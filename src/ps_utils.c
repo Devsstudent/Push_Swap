@@ -6,7 +6,7 @@
 /*   By: odessein <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/08 22:33:27 by odessein          #+#    #+#             */
-/*   Updated: 2022/07/08 23:25:54 by odessein         ###   ########.fr       */
+/*   Updated: 2022/07/15 20:10:44 by odessein         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ void	ps_free_end(t_list **stack_a, int *arr)
 {
 	t_list	*tmp;
 
-	while (*stack_a != NULL)
+	while (stack_a && *stack_a != NULL)
 	{
 		tmp = (*stack_a)->next;
 		free(*stack_a);
