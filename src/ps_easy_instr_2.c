@@ -6,14 +6,14 @@
 /*   By: odessein <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/08 22:39:36 by odessein          #+#    #+#             */
-/*   Updated: 2022/07/18 23:52:40 by odessein         ###   ########.fr       */
+/*   Updated: 2022/07/18 23:55:46 by odessein         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "ps.h"
 
 static t_bool	ps_do_instruction(t_list **stack_a, t_list **stack_b, int i)
 {
-	int		j;
+	int	j;
 
 	j = -1;
 	while (++j < i && i < 3)
@@ -21,7 +21,7 @@ static t_bool	ps_do_instruction(t_list **stack_a, t_list **stack_b, int i)
 	while (++j < i && i >= 3)
 		ps_rra(stack_a);
 	ps_pb(stack_a, stack_b);
-		return (TRUE);
+	return (TRUE);
 }
 
 void	ps_five(t_list **stack_a, t_list **stack_b)
