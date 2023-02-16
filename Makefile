@@ -21,8 +21,6 @@ object :
 	@mkdir -p obj
 
 fclean :
-	rm -f $(OBJ)
-	rm -f $(D_LIST)
 	rm -rf obj
 	rm -f $(NAME)
 	@make fclean -s -C $(LIB)
